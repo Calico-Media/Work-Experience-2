@@ -1,0 +1,20 @@
+{
+  "id": "u_8814",
+  "name": "Nadia Haddad",
+  "email": "nhaddad@haldenlogistics.com",
+  "role": "admin",
+  "defaultAccount": "northwind",
+  "timezone": "Europe/London",
+  "accounts": [
+    {
+      "id": "northwind",
+      "name": "Northwind Studio",
+      "plan": "Growth"
+    },
+    {
+      "id": "halden",
+      "name": "Halden Logistics",
+      "plan": "Enterprise"
+    }
+  ]
+}

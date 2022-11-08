@@ -1,0 +1,181 @@
+.shell {
+  display: grid;
+  grid-template-columns: 232px 1fr;
+  min-height: 100vh;
+}
+
+
+.shell__main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Sidebar */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  padding: 16px 12px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 8px 20px;
+}
+
+.sidebar__logo {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.sidebar__name {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+
+.sidebar__item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.sidebar__item.is-active {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--sidebar-active);
+}
+
+.sidebar__icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: block;
+}
+
+.sidebar__footer {
+  margin-top: auto;
+}
+
+
+/* Header */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 60px;
+  padding: 0 28px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.topbar__title {
+  font-size: 17px;
+}
+
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar__user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar__user-name {
+  font-weight: 500;
+}
+
+/* Content */
+
+.content {
+  padding: 28px;
+  flex: 1;
+}
+
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.page-header__title {
+  font-size: 22px;
+}
+
+.page-header__subtitle {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
+.page-header__actions {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .shell {
+    grid-template-columns: 64px 1fr;
+  }
+
+  .sidebar__label,
+  .sidebar__name {
+    display: none;
+  }
+
+  .content {
+    padding: 16px;
+  }
+}
