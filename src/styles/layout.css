@@ -4,6 +4,9 @@
   min-height: 100vh;
 }
 
+.shell--collapsed {
+  grid-template-columns: 64px 1fr;
+}
 
 .shell__main {
   display: flex;
@@ -91,6 +94,15 @@
   margin-top: auto;
 }
 
+.sidebar__collapse {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+}
 
 /* Header */
 

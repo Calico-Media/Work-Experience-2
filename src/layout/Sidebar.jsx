@@ -46,6 +46,12 @@ export default function Sidebar({ activeItem, collapsed, onSelect, onToggleColla
           </button>
         ))}
       </nav>
+
+      <div className="sidebar__footer">
+        <button type="button" className="sidebar__collapse" onClick={onToggleCollapse}>
+          {collapsed ? '»' : '« Collapse'}
+        </button>
+      </div>
     </aside>
   )
 }
