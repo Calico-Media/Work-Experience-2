@@ -290,3 +290,8 @@
     grid-column: auto;
   }
 }
+
+.chart-box {
+  position: relative;
+  height: 220px;
+}
