@@ -1,6 +1,6 @@
 # Calico dashboard
 
-The customer dashboard for **Calico**, our growth planning software for local businesses. This is the screen account owners and our own support team use to see customers, plans and seats, what has happened on the account recently, and who has access.
+The customer dashboard for **Calico**, our growth planning software for local businesses. This is the screen account owners and our own support team use to see customers, plans and seats, and what has happened on the account recently.
 
 The product's marketing site lives in `calico-marketing-site`. This repo is only the dashboard.
 
