@@ -1,8 +1,8 @@
 # Calico dashboard
 
-The customer dashboard for **Calico**, our growth planning software for local businesses. This is the screen account owners and our own support team use to see customers, plans and seats, and what has happened on the account recently.
+The customer dashboard for **Calico**, our growth planning software for local businesses. This is the screen that account owners and the support team use to see customers, plans and seats, and what has happened on the account recently.
 
-The product's marketing site lives in `calico-marketing-site`. This repo is only the dashboard.
+This repo is only the dashboard.
 
 ## Running it locally
 
@@ -14,10 +14,6 @@ npm run dev
 ```
 
 The app runs at http://localhost:5173.
-
-There is no backend to set up. The dashboard runs against an in-memory mock of the Calico API in `src/api.js`: it loads seed data from `src/data/`, answers after a short delay like the real service would, and keeps changes in memory until you reload the page. Every call is logged to the browser console with an `[api]` prefix so you can see what a screen is requesting.
-
-`npm run build` produces a production build in `dist/`, and `npm run preview` serves it.
 
 ## Accounts
 
