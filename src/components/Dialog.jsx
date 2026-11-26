@@ -16,10 +16,15 @@ export default function Dialog({ title, onClose, children, footer }) {
     }
   }, [onClose])
 
-  useEffect(() => {
-    const first = panelRef.current && panelRef.current.querySelector('input, select, button')
-    if (first) first.focus()
-  }, [])
+    useEffect(() => {
+      const previousFocus = document.activeElement
+      const first = panelRef.current &&
+        panelRef.current.querySelector('input, select, button')
+      if (first) first.focus()
+      return () => {
+        if (previousFocus) previousFocus.focus()
+      }
+    }, [])
 
   return (
     <div className="dialog-backdrop" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
